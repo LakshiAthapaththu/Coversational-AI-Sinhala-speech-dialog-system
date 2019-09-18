@@ -58,7 +58,7 @@ templates:
   utter_ask_for_try_again:
   - text: Would you like to try again?
   utter_ask_number_of_months_for_fixed_account:
-  - text: How many months you would like to put this fixed account?
+  - text: How many months you would like to keep this fixed account?
   utter_ask_way_of_interest_receiving:
   - text: How would you like to take back the interest?
   utter_default:

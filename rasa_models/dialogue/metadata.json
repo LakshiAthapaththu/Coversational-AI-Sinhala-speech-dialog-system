@@ -3,10 +3,7 @@
     "action_listen": {
       "slots": []
     },
-    "utter_for_stop": {
-      "slots": []
-    },
-    "utter_for_try_again": {
+    "action_restart": {
       "slots": []
     },
     "utter_thankyou": {
@@ -27,7 +24,7 @@
     "rasa_core.policies.fallback.FallbackPolicy",
     "rasa_core.policies.form_policy.FormPolicy"
   ],
-  "trained_at": "20190917-195813",
+  "trained_at": "20190918-143910",
   "rasa_core": "0.14.5",
   "tensorflow": "1.13.2",
   "sklearn": "0.20.4"

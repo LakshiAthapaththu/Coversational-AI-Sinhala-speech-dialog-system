@@ -30,7 +30,7 @@ templates:
   utter_ask_for_confirmation:
     - "Do you confirm the opening account"
   utter_ask_number_of_months_for_fixed_account:
-    - "How many months you would like to put this fixed account?"
+    - "How many months you would like to keep this fixed account?"
   utter_ask_way_of_interest_receiving:
     - "How would you like to take back the interest?"
   utter_thankyou:
