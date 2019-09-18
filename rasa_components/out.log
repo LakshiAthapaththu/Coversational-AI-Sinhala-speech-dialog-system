@@ -1,0 +1,376 @@
+Rasa process starting
+Rasa process starting
+From /home/lakshika/.local/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+Restoring parameters from ../rasa_models/current/nlu/component_4_EmbeddingIntentClassifier.ckpt
+Generating grammar tables from /usr/lib/python3.6/lib2to3/Grammar.txt
+Generating grammar tables from /usr/lib/python3.6/lib2to3/PatternGrammar.txt
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+From /home/lakshika/.local/lib/python3.6/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /home/lakshika/.local/lib/python3.6/site-packages/tensorflow/python/keras/backend.py:4010: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /home/lakshika/.local/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Available web server routes: 
+hello                                              HEAD, OPTIONS, GET             /
+list_trackers                                      HEAD, OPTIONS, GET             /conversations
+execute_action                                     POST, OPTIONS                  /conversations/[sender_id]/execute
+log_message                                        POST, OPTIONS                  /conversations/[sender_id]/messages
+predict                                            POST, OPTIONS                  /conversations/[sender_id]/predict
+respond                                            POST, HEAD, OPTIONS, GET       /conversations/[sender_id]/respond
+retrieve_story                                     HEAD, OPTIONS, GET             /conversations/[sender_id]/story
+retrieve_tracker                                   HEAD, OPTIONS, GET             /conversations/[sender_id]/tracker
+replace_events                                     OPTIONS, PUT                   /conversations/[sender_id]/tracker/events
+get_domain                                         HEAD, OPTIONS, GET             /domain
+evaluate_stories                                   POST, OPTIONS                  /evaluate
+continue_training                                  POST, OPTIONS                  /finetune
+load_model                                         POST, OPTIONS                  /model
+parse                                              POST, OPTIONS                  /parse
+tracker_predict                                    POST, OPTIONS                  /predict
+static                                             HEAD, OPTIONS, GET             /static/[filename]
+status                                             HEAD, OPTIONS, GET             /status
+version                                            HEAD, OPTIONS, GET             /version
+custom_webhook_CmdlineInput.health                 HEAD, OPTIONS, GET             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id '13456'.
+Received user message 'එකව්න්ට් එකක් ඕපන් කරන්න ඕනි' with intent '{'name': 'open a new bank account', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_open a new bank account': 1.0}]
+There is a memorised next action '9'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_account_type' with prob 1.00.
+Action 'utter_ask_account_type' ended with events '[]'
+Bot utterance 'BotUttered(text: What type of account you want to open?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_open a new bank account': 1.0}, {'prev_utter_ask_account_type': 1.0, 'intent_open a new bank account': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id '13456'
+Received user message 'ඉතුරුම් ගිණුමක්' with intent '{'name': 'savings account', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+
+Current tracker state [{'prev_action_listen': 1.0, 'intent_open a new bank account': 1.0}, {'prev_utter_ask_account_type': 1.0, 'intent_open a new bank account': 1.0}, {'prev_action_listen': 1.0, 'intent_account type': 1.0}]
+There is no memorised next action
+There is no active form
+Action 'action_listen' was predicted after a user message using policy_0_KerasPolicy. Predicting fallback action: utter_default
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'utter_default' with prob 1.00.
+Action 'utter_default' ended with events '[]'
+Bot utterance 'BotUttered(text: I can't understand you please try again, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_utter_ask_account_type': 1.0, 'intent_open a new bank account': 1.0}, {'prev_action_listen': 1.0, 'intent_account type': 1.0}, {'intent_account type': 1.0, 'prev_utter_default': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Creating a new tracker for id '1'.
+Received user message 'එකව්න්ට් එකක් ඕපන් කරන්න ඕනි' with intent '{'name': 'open a new bank account', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_open a new bank account': 1.0}]
+There is a memorised next action '9'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_account_type' with prob 1.00.
+Action 'utter_ask_account_type' ended with events '[]'
+Bot utterance 'BotUttered(text: What type of account you want to open?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_open a new bank account': 1.0}, {'prev_utter_ask_account_type': 1.0, 'intent_open a new bank account': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id '1'
+Received user message 'මට ඕනි ඉතිරිකිරීමේ ගිණුමක්' with intent '{'name': 'savings account', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+
+Current tracker state [{'prev_action_listen': 1.0, 'intent_open a new bank account': 1.0}, {'prev_utter_ask_account_type': 1.0, 'intent_open a new bank account': 1.0}, {'intent_savings account': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '10'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_type_of_savings_account_type' with prob 1.00.
+Action 'utter_type_of_savings_account_type' ended with events '[]'
+Bot utterance 'BotUttered(text: What type of savings account you want to open?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_utter_ask_account_type': 1.0, 'intent_open a new bank account': 1.0}, {'intent_savings account': 1.0, 'prev_action_listen': 1.0}, {'intent_savings account': 1.0, 'prev_utter_type_of_savings_account_type': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id '1'
+Received user message 'යොවුන් ඉතුරුම් ගිණුමක්' with intent '{'name': 'account type', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 10 events
+Current slot values: 
+
+Current tracker state [{'intent_savings account': 1.0, 'prev_action_listen': 1.0}, {'intent_savings account': 1.0, 'prev_utter_type_of_savings_account_type': 1.0}, {'prev_action_listen': 1.0, 'intent_account type': 1.0}]
+There is a memorised next action '11'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_deposit_amount' with prob 1.00.
+Action 'utter_deposit_amount' ended with events '[]'
+Bot utterance 'BotUttered(text: How much money you deposit to open account?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_savings account': 1.0, 'prev_utter_type_of_savings_account_type': 1.0}, {'prev_action_listen': 1.0, 'intent_account type': 1.0}, {'prev_utter_deposit_amount': 1.0, 'intent_account type': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id '13456'
+Received user message 'දෙක' with intent '{'name': 'selection', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 10 events
+Current slot values: 
+
+Current tracker state [{'prev_action_listen': 1.0, 'intent_account type': 1.0}, {'intent_account type': 1.0, 'prev_utter_default': 1.0}, {'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Action 'action_listen' was predicted after a user message using policy_0_KerasPolicy. Predicting fallback action: utter_default
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'utter_default' with prob 1.00.
+Action 'utter_default' ended with events '[]'
+Bot utterance 'BotUttered(text: I can't understand you please try again, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_account type': 1.0, 'prev_utter_default': 1.0}, {'prev_action_listen': 1.0}, {'prev_utter_default': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id '1'
+Received user message 'දෙක' with intent '{'name': 'selection', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 14 events
+Current slot values: 
+
+Current tracker state [{'prev_action_listen': 1.0, 'intent_account type': 1.0}, {'prev_utter_deposit_amount': 1.0, 'intent_account type': 1.0}, {'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Action 'action_listen' was predicted after a user message using policy_0_KerasPolicy. Predicting fallback action: utter_default
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'utter_default' with prob 1.00.
+Action 'utter_default' ended with events '[]'
+Bot utterance 'BotUttered(text: I can't understand you please try again, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_utter_deposit_amount': 1.0, 'intent_account type': 1.0}, {'prev_action_listen': 1.0}, {'prev_utter_default': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Creating a new tracker for id '10'.
+Received user message 'මට ඕනි ඉතිරිකිරීමේ ගිණුමක්' with intent '{'name': 'savings account', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+
+Current tracker state [None, {}, {'intent_savings account': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '10'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_type_of_savings_account_type' with prob 1.00.
+Action 'utter_type_of_savings_account_type' ended with events '[]'
+Bot utterance 'BotUttered(text: What type of savings account you want to open?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'intent_savings account': 1.0, 'prev_action_listen': 1.0}, {'intent_savings account': 1.0, 'prev_utter_type_of_savings_account_type': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id '10'
+Received user message 'මට ඕනි ඉතිරිකිරීමේ ගිණුමක්' with intent '{'name': 'savings account', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+
+Current tracker state [{'intent_savings account': 1.0, 'prev_action_listen': 1.0}, {'intent_savings account': 1.0, 'prev_utter_type_of_savings_account_type': 1.0}, {'intent_savings account': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Action 'action_listen' was predicted after a user message using policy_0_KerasPolicy. Predicting fallback action: utter_default
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'utter_default' with prob 1.00.
+Action 'utter_default' ended with events '[]'
+Bot utterance 'BotUttered(text: I can't understand you please try again, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_savings account': 1.0, 'prev_utter_type_of_savings_account_type': 1.0}, {'intent_savings account': 1.0, 'prev_action_listen': 1.0}, {'intent_savings account': 1.0, 'prev_utter_default': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Creating a new tracker for id '11'.
+Received user message 'මට නව ගිණුමක් විවෘත කරන්න ඕන' with intent '{'name': 'open a new bank account', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_open a new bank account': 1.0}]
+There is a memorised next action '9'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_account_type' with prob 1.00.
+Action 'utter_ask_account_type' ended with events '[]'
+Bot utterance 'BotUttered(text: What type of account you want to open?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_open a new bank account': 1.0}, {'prev_utter_ask_account_type': 1.0, 'intent_open a new bank account': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id '11'
+Received user message 'මට ඕනි ඉතිරිකිරීමේ ගිණුමක්' with intent '{'name': 'savings account', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+
+Current tracker state [{'prev_action_listen': 1.0, 'intent_open a new bank account': 1.0}, {'prev_utter_ask_account_type': 1.0, 'intent_open a new bank account': 1.0}, {'intent_savings account': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '10'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_type_of_savings_account_type' with prob 1.00.
+Action 'utter_type_of_savings_account_type' ended with events '[]'
+Bot utterance 'BotUttered(text: What type of savings account you want to open?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_utter_ask_account_type': 1.0, 'intent_open a new bank account': 1.0}, {'intent_savings account': 1.0, 'prev_action_listen': 1.0}, {'intent_savings account': 1.0, 'prev_utter_type_of_savings_account_type': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id '11'
+Received user message 'යොවුන් ඉතුරුම් ගිණුමක්' with intent '{'name': 'account type', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 10 events
+Current slot values: 
+
+Current tracker state [{'intent_savings account': 1.0, 'prev_action_listen': 1.0}, {'intent_savings account': 1.0, 'prev_utter_type_of_savings_account_type': 1.0}, {'prev_action_listen': 1.0, 'intent_account type': 1.0}]
+There is a memorised next action '11'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_deposit_amount' with prob 1.00.
+Action 'utter_deposit_amount' ended with events '[]'
+Bot utterance 'BotUttered(text: How much money you deposit to open account?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_savings account': 1.0, 'prev_utter_type_of_savings_account_type': 1.0}, {'prev_action_listen': 1.0, 'intent_account type': 1.0}, {'prev_utter_deposit_amount': 1.0, 'intent_account type': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id '11'
+Received user message 'එක' with intent '{'name': 'selection', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 14 events
+Current slot values: 
+
+Current tracker state [{'prev_action_listen': 1.0, 'intent_account type': 1.0}, {'prev_utter_deposit_amount': 1.0, 'intent_account type': 1.0}, {'prev_action_listen': 1.0, 'intent_selection': 1.0}]
+There is a memorised next action '13'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_correctness_of_given_details' with prob 1.00.
+Action 'utter_ask_correctness_of_given_details' ended with events '[]'
+Bot utterance 'BotUttered(text: Confirm the correcteness of your details?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_utter_deposit_amount': 1.0, 'intent_account type': 1.0}, {'prev_action_listen': 1.0, 'intent_selection': 1.0}, {'prev_utter_ask_correctness_of_given_details': 1.0, 'intent_selection': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id '11'
+Received user message 'ඔව් ඔක්කොම නිවැරදියි' with intent '{'name': 'correct detailas', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 18 events
+Current slot values: 
+
+Current tracker state [{'prev_action_listen': 1.0, 'intent_selection': 1.0}, {'prev_utter_ask_correctness_of_given_details': 1.0, 'intent_selection': 1.0}, {'intent_correct detailas': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '14'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_for_confirmation' with prob 1.00.
+Action 'utter_ask_for_confirmation' ended with events '[]'
+Bot utterance 'BotUttered(text: Do you confirm the opening account, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_utter_ask_correctness_of_given_details': 1.0, 'intent_selection': 1.0}, {'intent_correct detailas': 1.0, 'prev_action_listen': 1.0}, {'intent_correct detailas': 1.0, 'prev_utter_ask_for_confirmation': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id '11'
+Received user message 'ඔව් ගිණුම විවෘත කිරීම තහවුරු කරනවා' with intent '{'name': 'confirmation', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 22 events
+Current slot values: 
+
+Current tracker state [{'intent_correct detailas': 1.0, 'prev_action_listen': 1.0}, {'intent_correct detailas': 1.0, 'prev_utter_ask_for_confirmation': 1.0}, {'prev_action_listen': 1.0, 'intent_confirmation': 1.0}]
+There is a memorised next action '17'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_thankyou' with prob 1.00.
+Action 'utter_thankyou' ended with events '[]'
+Bot utterance 'BotUttered(text: Thank you for the details we will proceed your request and let you no, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_correct detailas': 1.0, 'prev_utter_ask_for_confirmation': 1.0}, {'prev_action_listen': 1.0, 'intent_confirmation': 1.0}, {'prev_utter_thankyou': 1.0, 'intent_confirmation': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'

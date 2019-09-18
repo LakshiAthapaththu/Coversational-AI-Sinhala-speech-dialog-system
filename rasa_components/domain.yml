@@ -1,0 +1,58 @@
+intents:
+ - open a new bank account
+ - savings account
+ - fixed account
+ - account type
+ - selection
+ - try again
+ - don't try again
+ - correct detailas
+ - incorrect details
+ - confirmation
+ - not confirmation 
+ - number of months
+ - after completion
+ - monthly
+ 
+templates:
+  utter_start:
+    - "Hey there! How can I help you?"
+  utter_ask_account_type:
+    - "What type of account you want to open?"
+  utter_type_of_savings_account_type:
+    - "What type of savings account you want to open?"
+  utter_deposit_amount:
+    - "How much money you deposit to open account?"
+  utter_ask_for_try_again:
+    - "Would you like to try again?"
+  utter_ask_correctness_of_given_details:
+    - "Confirm the correcteness of your details?"
+  utter_ask_for_confirmation:
+    - "Do you confirm the opening account"
+  utter_ask_number_of_months_for_fixed_account:
+    - "How many months you would like to put this fixed account?"
+  utter_ask_way_of_interest_receiving:
+    - "How would you like to take back the interest?"
+  utter_thankyou:
+    - "Thank you for the details we will proceed your request and let you no"
+  utter_for_try_again:
+    - "Start from the begining"
+  utter_for_stop:
+    - "Thank you for the interaction"
+  utter_default:
+    - "I can't understand you please try again"
+  
+actions:
+- utter_start
+- utter_ask_account_type
+- utter_type_of_savings_account_type
+- utter_deposit_amount
+- utter_ask_for_try_again
+- utter_ask_correctness_of_given_details
+- utter_ask_for_confirmation
+- utter_ask_number_of_months_for_fixed_account
+- utter_ask_way_of_interest_receiving
+- utter_thankyou
+- utter_for_try_again
+- utter_for_stop
+- utter_default

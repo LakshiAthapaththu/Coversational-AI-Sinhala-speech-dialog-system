@@ -1,0 +1,725 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "open a new bank account",
+        "text": "මට නව ගිණුමක් විවෘත කරන්න ඕන"
+      },
+      {
+        "intent": "open a new bank account",
+        "text": "මට අලුත් ගිණුමක් විවෘත කරන්න ඕන"
+      },
+      {
+        "intent": "open a new bank account",
+        "text": "අලුත් ගිණුමක් විවෘත කරන්න ඕන"
+      },
+      {
+        "intent": "open a new bank account",
+        "text": "නව ගිණුමක් විවෘත කරන්න ඕන"
+      },
+      {
+        "intent": "open a new bank account",
+        "text": "එකව්න්ට් එකක් ඕපන් කරන්න ඕනි"
+      },
+      {
+        "intent": "open a new bank account",
+        "text": "අලුත් ගිණුමක් ඕන"
+      },
+      {
+        "intent": "open a new bank account",
+        "text": "අලුත් ගිණුමක් ඕනි"
+      },
+      {
+        "intent": "open a new bank account",
+        "text": "නව ගිණුමක් ඕනි"
+      },
+      {
+        "intent": "open a new bank account",
+        "text": "නව ගිණුමක් හදන්න"
+      },
+      {
+        "intent": "open a new bank account",
+        "text": "අලුත් ගිණුමක් හදන්න"
+      },
+      {
+        "intent": "open a new bank account",
+        "text": "ගිණුමක් විවෘත කරන්න ඕනි"
+      },
+      {
+        "intent": "open a new bank account",
+        "text": "අලුත් එකව්න්ට් එකක් ඕපන් කරන්න ඕනි"
+      },
+      {
+        "intent": "open a new bank account",
+        "text": "එකව්න්ට් එකක් ඕපන් කරන්න"
+      },
+      {
+        "intent": "open a new bank account",
+        "text": "ගිණුමක් විවෘත කරන්න ඕන"
+      },
+      {
+        "intent": "open a new bank account",
+        "text": "මට අලුත් එකව්න්ට් එකක් අරින්න ඕන"
+      },
+      {
+        "intent": "open a new bank account",
+        "text": "එකව්න්ට් එකක් අරින්න"
+      },
+      {
+        "intent": "open a new bank account",
+        "text": "මට අලුත් එකව්න්ට් එකක් අරින්න"
+      },
+      {
+        "intent": "open a new bank account",
+        "text": "අලුත් එකව්න්ට් එකක් හදන්න"
+      },
+      {
+        "intent": "open a new bank account",
+        "text": "එකව්න්ට් එකක් ඕපන් කරන්නේ කොහොමද"
+      },
+      {
+        "intent": "open a new bank account",
+        "text": "අලුත් ගිණුමක් අරින්න"
+      },
+      {
+        "intent": "open a new bank account",
+        "text": "නව ගිණුමක් අරින්න"
+      },
+      {
+        "intent": "open a new bank account",
+        "text": "ගිණුමක් අරින්න"
+      },
+      {
+        "intent": "savings account",
+        "text": "ඉතිරීකිරීමේ ගිණුමක්"
+      },
+      {
+        "intent": "savings account",
+        "text": "ඉතිරීකිරීමේ ගිණුමක් විවෘත කරන්න ඕනි"
+      },
+      {
+        "intent": "savings account",
+        "text": "මට ඕන ඉතිරිකිරීමේ ගිණුමක්"
+      },
+      {
+        "intent": "savings account",
+        "text": "මට ඕනි ඉතිරිකිරීමේ ගිණුමක්"
+      },
+      {
+        "intent": "savings account",
+        "text": "සේවින්ග්ස් එකව්න්ට් එකක් ඕපන් කරන්න"
+      },
+      {
+        "intent": "savings account",
+        "text": "ඉතිරිකිරීමේ ගිණුමක් අරින්න"
+      },
+      {
+        "intent": "savings account",
+        "text": "මට ඉතිරීකිරීමේ ගිණුමක්"
+      },
+      {
+        "intent": "savings account",
+        "text": "මට සේවින්ග්ස් එකව්න්ට් එකක් ඕපන් කරන්න ඕන"
+      },
+      {
+        "intent": "savings account",
+        "text": "මට අලුත් සේවින්ග්ස් එකව්න්ට් එකක් පටන් ගන්න ඕන"
+      },
+      {
+        "intent": "savings account",
+        "text": "අලුත් සේවින්ග්ස් එකව්න්ට් එකක්"
+      },
+      {
+        "intent": "savings account",
+        "text": "අලුත් සේවින්ග්ස් එකව්න්ට් එකක් ඕන"
+      },
+      {
+        "intent": "savings account",
+        "text": "මට ඉතිරිකිරීමේ ගිණුමක් අරින්න අවශ්‍යයි"
+      },
+      {
+        "intent": "savings account",
+        "text": "ඉතුරුම් ගිණුමක් හදන්න"
+      },
+      {
+        "intent": "savings account",
+        "text": "මට සේවින්ග්ස් එකව්න්ට් එකක් ඕපන් කරගන්න ඕන"
+      },
+      {
+        "intent": "savings account",
+        "text": "ඉතුරුම් ගිණුමක් ඕපන් කරන්න"
+      },
+      {
+        "intent": "savings account",
+        "text": "ඉතුරුම් ගිණුමක් පටන් ගන්න ඕන"
+      },
+      {
+        "intent": "savings account",
+        "text": "ඉතුරුම් ගිණුමක් ඕපන් කරගන්න ඕන"
+      },
+      {
+        "intent": "savings account",
+        "text": "ස්ථාවර තැන්පතුවක්"
+      },
+      {
+        "intent": "fixed account",
+        "text": "ස්ථාවර තැන්පතුවක් විවෘත කරන්න ඕනි"
+      },
+      {
+        "intent": "fixed account",
+        "text": "ස්ථාවර තැන්පතුවක් ඕනි"
+      },
+      {
+        "intent": "fixed account",
+        "text": "මට ඕන ස්ථාවර තැන්පතුවක්"
+      },
+      {
+        "intent": "fixed account",
+        "text": "මට ඵෆ්ඩි එකක් ඕපන් කරන්න ඕන"
+      },
+      {
+        "intent": "fixed account",
+        "text": "මට ඕන ඵෆ්ඩි එකක්"
+      },
+      {
+        "intent": "fixed account",
+        "text": "මට ස්ථාවර තැන්පතුවක් අරින්න අවශ්‍යයි"
+      },
+      {
+        "intent": "fixed account",
+        "text": "මට ඵෆ්ඩි එකක් අරින්න අවශ්‍යයි"
+      },
+      {
+        "intent": "fixed account",
+        "text": "මට ඵෆ්ඩි එකක්  ඕපන් කරගන්න ඕන"
+      },
+      {
+        "intent": "fixed account",
+        "text": "මට ඵෆ්ඩි එකක්  ඕපන් කරගන්න ඕනි"
+      },
+      {
+        "intent": "fixed account",
+        "text": "ස්ථාවර තැන්පතුවක් දාන්න ඕන"
+      },
+      {
+        "intent": "fixed account",
+        "text": "ඵෆ්ඩි එකක් දාන්න ඕන"
+      },
+      {
+        "intent": "fixed account",
+        "text": "ඵෆ්ඩි එකක්"
+      },
+      {
+        "intent": "fixed account",
+        "text": "මට ඵෆ්ඩි එකක් අරින්න ඕන"
+      },
+      {
+        "intent": "fixed account",
+        "text": "ස්ථාවර තැන්පතුවක් ඕනි"
+      },
+      {
+        "intent": "account type",
+        "text": "සාමානය ඉතුරුම් ගිණුමක්"
+      },
+      {
+        "intent": "account type",
+        "text": "කාන්තා ඉතුරුම් ගිණුමක්"
+      },
+      {
+        "intent": "account type",
+        "text": "යොවුන් ඉතුරුම් ගිණුමක්"
+      },
+      {
+        "intent": "account type",
+        "text": "ජේයෂ්ට පුරවැසි ඉතුරුම් ගිණුමක්"
+      },
+      {
+        "intent": "selection",
+        "text": "එක"
+      },
+      {
+        "intent": "selection",
+        "text": "දෙක"
+      },
+      {
+        "intent": "selection",
+        "text": "තුන"
+      },
+      {
+        "intent": "selection",
+        "text": "හතර"
+      },
+      {
+        "intent": "selection",
+        "text": "පහ"
+      },
+      {
+        "intent": "try again",
+        "text": "ඔව්"
+      },
+      {
+        "intent": "try again",
+        "text": "මට නැවත උත්සහ කිරීමට අවශ්‍යයි"
+      },
+      {
+        "intent": "try again",
+        "text": "ආයෙත් උත්සහ කරන්න ඕන"
+      },
+      {
+        "intent": "try again",
+        "text": "ආයෙත් ට්‍රයි කරන්න ඕන"
+      },
+      {
+        "intent": "try again",
+        "text": "නැවත ට්‍රයි කිරීමට ඕන"
+      },
+      {
+        "intent": "try again",
+        "text": "නැවත ට්‍රයි කරලා බලන්න ඕන"
+      },
+      {
+        "intent": "try again",
+        "text": "ආයේ ට්‍රයි කරන්න ඕන"
+      },
+      {
+        "intent": "try again",
+        "text": "තව ට්‍රයි එකක් ඕන"
+      },
+      {
+        "intent": "try again",
+        "text": "ආයෙත් පටන් ගන්න"
+      },
+      {
+        "intent": "try again",
+        "text": "මට මේක ආයේ ට්‍රයි කරන්න පුලුවන්ද"
+      },
+      {
+        "intent": "try again",
+        "text": "මට ආපහු ට්‍රයි කරන්න ඕන"
+      },
+      {
+        "intent": "try again",
+        "text": "තව පාරක් කරලා බලන්න"
+      },
+      {
+        "intent": "try again",
+        "text": "ආයෙත් කරන්න"
+      },
+      {
+        "intent": "try again",
+        "text": "ආපහු කරලා බලන්න"
+      },
+      {
+        "intent": "try again",
+        "text": "ආයෙත් පාරක්  ට්‍රයි කිරීමට ඕන"
+      },
+      {
+        "intent": "don't try again",
+        "text": "නෑ"
+      },
+      {
+        "intent": "don't try again",
+        "text": "නැත"
+      },
+      {
+        "intent": "don't try again",
+        "text": "නැහැ"
+      },
+      {
+        "intent": "don't try again",
+        "text": "නෑ ඕන නෑ"
+      },
+      {
+        "intent": "don't try again",
+        "text": "ඇති"
+      },
+      {
+        "intent": "don't try again",
+        "text": "නැහැ ඕන නෑ"
+      },
+      {
+        "intent": "don't try again",
+        "text": "ආයෙත් උත්සහ කරන්න ඕන නැහැ"
+      },
+      {
+        "intent": "don't try again",
+        "text": "උත්සහ කරන්න ඕන නැහැ"
+      },
+      {
+        "intent": "don't try again",
+        "text": "ආයිත් ට්‍රයි කරන්න ඕන නැත"
+      },
+      {
+        "intent": "don't try again",
+        "text": "ට්‍රයි කරන්න ඕන නැත"
+      },
+      {
+        "intent": "don't try again",
+        "text": "නැවත උත්සහ කරන්න අවශ්‍ය නැත"
+      },
+      {
+        "intent": "don't try again",
+        "text": "තව දුරටත් ඉස්සරහට යන්න ඕන නෑ"
+      },
+      {
+        "intent": "don't try again",
+        "text": "තව ට්‍රයි එකක් ඕන නැත"
+      },
+      {
+        "intent": "don't try again",
+        "text": "නැවත උත්සහ කිරීමට අනවශ්‍යයි"
+      },
+      {
+        "intent": "don't try again",
+        "text": "නැවත උත්සහ කරන්න එපා"
+      },
+      {
+        "intent": "don't try again",
+        "text": "ආයිත් කරන්න ඕන නැත"
+      },
+      {
+        "intent": "correct detailas",
+        "text": "හරි"
+      },
+      {
+        "intent": "correct detailas",
+        "text": "තොරතුරු හරි"
+      },
+      {
+        "intent": "correct detailas",
+        "text": "තොරතුරු නිවැරදියි"
+      },
+      {
+        "intent": "correct detailas",
+        "text": "ඒක හරි"
+      },
+      {
+        "intent": "correct detailas",
+        "text": "ඔව් ඔක්කොම නිවැරදියි"
+      },
+      {
+        "intent": "correct detailas",
+        "text": "ඔක්කොම නිවැරදියි"
+      },
+      {
+        "intent": "correct detailas",
+        "text": "ඔව් නිවැරදියි"
+      },
+      {
+        "intent": "correct detailas",
+        "text": "නිවැරදියි"
+      },
+      {
+        "intent": "correct detailas",
+        "text": "ඔක්කොම හරි"
+      },
+      {
+        "intent": "correct detailas",
+        "text": "ඉහත තොරතුරු නිවැරදියි"
+      },
+      {
+        "intent": "correct detailas",
+        "text": "ඉහත තොරතුරු හරි"
+      },
+      {
+        "intent": "correct detailas",
+        "text": "ඔව් හරි"
+      },
+      {
+        "intent": "correct detailas",
+        "text": "මගේ ඩීටේයිල්ස් හරි"
+      },
+      {
+        "intent": "correct detailas",
+        "text": "ඩීටේයිල්ස් හරි"
+      },
+      {
+        "intent": "correct detailas",
+        "text": "මේ ඩීටේයිල්ස් හරි"
+      },
+      {
+        "intent": "correct detailas",
+        "text": "විස්තර ඕකේ"
+      },
+      {
+        "intent": "correct detailas",
+        "text": "මේ ඉන්ෆොමේෂන් හරි"
+      },
+      {
+        "intent": "incorrect details",
+        "text": "තොරතුරු වැරදියි"
+      },
+      {
+        "intent": "incorrect details",
+        "text": "වැරදියි"
+      },
+      {
+        "intent": "incorrect details",
+        "text": "නෑ වැරදියි"
+      },
+      {
+        "intent": "incorrect details",
+        "text": "නෑ"
+      },
+      {
+        "intent": "incorrect details",
+        "text": "ඔව් වැරදියි"
+      },
+      {
+        "intent": "incorrect details",
+        "text": "ඒ තොරතුරු වැරදියි"
+      },
+      {
+        "intent": "incorrect details",
+        "text": "මේ තොරතුරු වැරදි කියල සනාථ කරනවා"
+      },
+      {
+        "intent": "incorrect details",
+        "text": "වැරදි කියල සනාථ කරනවා"
+      },
+      {
+        "intent": "incorrect details",
+        "text": "තොරතුරු වැරදි බව සනාථ කරන්න ඕන"
+      },
+      {
+        "intent": "incorrect details",
+        "text": "වැරදි බව සනාථ කරන්න ඕන"
+      },
+      {
+        "intent": "incorrect details",
+        "text": "ඔය තොරතුරු වැරදියි"
+      },
+      {
+        "intent": "incorrect details",
+        "text": "මේ විස්තර වැරදියි"
+      },
+      {
+        "intent": "incorrect details",
+        "text": "ඩීටේයිල්ස් වල වැරැද්දක් තියනවා"
+      },
+      {
+        "intent": "incorrect details",
+        "text": "ඕක වැරදියි"
+      },
+      {
+        "intent": "incorrect details",
+        "text": "වැරැද්දක් තියනවා"
+      },
+      {
+        "intent": "incorrect details",
+        "text": "තොරතුරු වල වැරැද්දක් තියනවා"
+      },
+      {
+        "intent": "incorrect details",
+        "text": "වැරදි තොරතුරු"
+      },
+      {
+        "intent": "confirmation",
+        "text": "ඔව් විවෘත කරන්න"
+      },
+      {
+        "intent": "confirmation",
+        "text": "විවෘත කරන්න"
+      },
+      {
+        "intent": "confirmation",
+        "text": "ඔව්"
+      },
+      {
+        "intent": "confirmation",
+        "text": "ඔව් ගිණුම විවෘත කරන්න"
+      },
+      {
+        "intent": "confirmation",
+        "text": "ගිණුම විවෘත කරන්න"
+      },
+      {
+        "intent": "confirmation",
+        "text": "තහවුරු කරනවා"
+      },
+      {
+        "intent": "confirmation",
+        "text": "ඔව් තහවුරු කරනවා"
+      },
+      {
+        "intent": "confirmation",
+        "text": "ගිණුම විවෘත කිරීම තහවුරු කරනවා"
+      },
+      {
+        "intent": "confirmation",
+        "text": "ඔව් ගිණුම විවෘත කිරීම තහවුරු කරනවා"
+      },
+      {
+        "intent": "confirmation",
+        "text": "ගිණුම විවෘත කරන්න ඕන"
+      },
+      {
+        "intent": "confirmation",
+        "text": "තහවුරු කරන්න ඕන"
+      },
+      {
+        "intent": "confirmation",
+        "text": "ඔව් ගිණුම විවෘත කිරීම කරන්න ඕන"
+      },
+      {
+        "intent": "confirmation",
+        "text": "තහවුරු කරන්න ඕන"
+      },
+      {
+        "intent": "confirmation",
+        "text": "කරගෙන යන්න"
+      },
+      {
+        "intent": "not confirmation",
+        "text": "කාර්ය නතර කරන්න"
+      },
+      {
+        "intent": "not confirmation",
+        "text": "නතර කරන්න"
+      },
+      {
+        "intent": "not confirmation",
+        "text": "නවත්තන්න"
+      },
+      {
+        "intent": "not confirmation",
+        "text": "ගිණුම විවෘත කිරීම නතර කරන්න"
+      },
+      {
+        "intent": "not confirmation",
+        "text": "ගිණුම විවෘත කිරීම නවත්තන්න"
+      },
+      {
+        "intent": "not confirmation",
+        "text": "දැන් මේ වැඩේ නතර කරන්න ඕන"
+      },
+      {
+        "intent": "not confirmation",
+        "text": "වැඩේ නතර කරන්න ඕන"
+      },
+      {
+        "intent": "not confirmation",
+        "text": "මට නවත්තන්න ඕන"
+      },
+      {
+        "intent": "not confirmation",
+        "text": "නවත්තන්න ඕන"
+      },
+      {
+        "intent": "not confirmation",
+        "text": "ඇති"
+      },
+      {
+        "intent": "not confirmation",
+        "text": "වැඩේ නවත්තනවා"
+      },
+      {
+        "intent": "not confirmation",
+        "text": "මට මේක නවතලා දාන්න ඕන"
+      },
+      {
+        "intent": "not confirmation",
+        "text": "නවතලා දාන්න"
+      },
+      {
+        "intent": "number of months",
+        "text": "මාස තුනයි"
+      },
+      {
+        "intent": "number of months",
+        "text": "මාස  හයයි"
+      },
+      {
+        "intent": "number of months",
+        "text": "මාස දොළහයි"
+      },
+      {
+        "intent": "number of months",
+        "text": "මාස තුන"
+      },
+      {
+        "intent": "number of months",
+        "text": "මාස හය"
+      },
+      {
+        "intent": "number of months",
+        "text": "මාස දොළහ"
+      },
+      {
+        "intent": "after completion",
+        "text": "කල් පිරීමේදී ලබා ගන්නවා"
+      },
+      {
+        "intent": "after completion",
+        "text": "පොළිය කල් පිරීමේදී ලබා ගන්නවා"
+      },
+      {
+        "intent": "after completion",
+        "text": "කල් පිරුනම ගන්නවා"
+      },
+      {
+        "intent": "after completion",
+        "text": "කල් පිරීමේදී ලබාගන්න ඕන"
+      },
+      {
+        "intent": "after completion",
+        "text": "කල් පිරීමේදී"
+      },
+      {
+        "intent": "after completion",
+        "text": "පොළිය කල් පිරීමේදී ගන්නවා"
+      },
+      {
+        "intent": "after completion",
+        "text": "කල් පිරුනම ලබා ගන්නවා"
+      },
+      {
+        "intent": "after completion",
+        "text": "කල් පිරුනම"
+      },
+      {
+        "intent": "after completion",
+        "text": "කල් පිරීමේදී ගන්නවා"
+      },
+      {
+        "intent": "after completion",
+        "text": "කල් පිරීමේදී ලබාගන්න ඕන"
+      },
+      {
+        "intent": "after completion",
+        "text": "කල් පිරුනම  ලබාගන්න ඕන"
+      },
+      {
+        "intent": "monthly",
+        "text": "මාසිකව ලබා ගන්නවා"
+      },
+      {
+        "intent": "monthly",
+        "text": "පොළිය මාසිකව ලබා ගන්නවා"
+      },
+      {
+        "intent": "monthly",
+        "text": "මාසිකව ලබාගන්න ඕන"
+      },
+      {
+        "intent": "monthly",
+        "text": "මාසිකව ගන්නවා"
+      },
+      {
+        "intent": "monthly",
+        "text": "මාසිකව"
+      },
+      {
+        "intent": "monthly",
+        "text": "පොළිය මාසිකව ලබාගන්න ඕන"
+      },
+      {
+        "intent": "monthly",
+        "text": "මාසිකව පොළිය ගන්නවා"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}
