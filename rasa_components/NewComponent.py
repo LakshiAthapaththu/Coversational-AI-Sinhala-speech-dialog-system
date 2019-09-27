@@ -5,7 +5,9 @@ from rasa.nlu.model import Metadata
 import nltk
 # from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import os
-from custom_intent_predictor.predict import predictIntent
+import sys
+sys.path.insert(0, '/home/lakshika/Desktop/bot-example-our/custom_intent_predictor')
+from predict import predictIntent
 
 
 class new_component(Component):

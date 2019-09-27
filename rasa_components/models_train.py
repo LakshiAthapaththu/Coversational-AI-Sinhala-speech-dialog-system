@@ -24,7 +24,7 @@ def train_core(domain_file, model_path, training_data_file, policy_config):
     return agent
 
 def train_nlu(data_path, configs, model_path):
-    # logging.basicConfig(filename=logfile, level=logging.DEBUG)
+    logging.basicConfig(filename=logfile, level=logging.DEBUG)
     training_data = load_data(data_path)
     trainer = Trainer(config_nlu.load(configs))
     trainer.train(training_data)

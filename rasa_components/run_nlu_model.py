@@ -12,10 +12,10 @@ logfile = 'run_nlu_model.log'
 def run_nlu(nlu_path):
     logging.basicConfig(filename=logfile, level=logging.DEBUG)
     interpreter = Interpreter.load(nlu_path)
-    file_read = open('test_sentences','r')
-    for line in file_read:
-        sentence = line.strip()
-        pprint.pprint(interpreter.parse(sentence))
+    # file_read = open('test_sentences','r')
+    # for line in file_read:
+    #     sentence = line.strip()
+    pprint.pprint(interpreter.parse('සාමානය ඉතුරුම් ගිණුමක්'))
 
 
 

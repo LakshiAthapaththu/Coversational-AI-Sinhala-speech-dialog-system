@@ -72,6 +72,6 @@ templates:
   utter_start:
   - text: Hey there! How can I help you?
   utter_thankyou:
-  - text: Thank you for the details we will proceed your request and let you no
+  - text: Thank you for the details we will proceed your request and let you know
   utter_type_of_savings_account_type:
   - text: What type of savings account you want to open?

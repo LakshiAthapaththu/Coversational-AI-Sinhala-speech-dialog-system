@@ -5,15 +5,12 @@
     },
     "action_restart": {
       "slots": []
-    },
-    "utter_thankyou": {
-      "slots": []
     }
   },
   "python": "3.6.8",
   "max_histories": [
-    3,
-    3,
+    6,
+    6,
     null,
     2
   ],
@@ -24,7 +21,7 @@
     "rasa_core.policies.fallback.FallbackPolicy",
     "rasa_core.policies.form_policy.FormPolicy"
   ],
-  "trained_at": "20190918-143910",
+  "trained_at": "20190927-143627",
   "rasa_core": "0.14.5",
   "tensorflow": "1.13.2",
   "sklearn": "0.20.4"

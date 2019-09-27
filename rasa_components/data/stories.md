@@ -11,6 +11,7 @@
  - utter_ask_for_confirmation
 * confirmation
  - utter_thankyou
+ - action_restart
 
 ## story_002
 * open a new bank account
@@ -172,7 +173,7 @@
  - utter_ask_number_of_months_for_fixed_account
 * number of months
  - utter_ask_way_of_interest_receiving
-* after completion
+* monthly
  - utter_deposit_amount
 * selection
  - utter_ask_correctness_of_given_details
@@ -189,7 +190,7 @@
  - utter_ask_number_of_months_for_fixed_account
 * number of months
  - utter_ask_way_of_interest_receiving
-* after completion
+* monthly
  - utter_deposit_amount
 * selection
  - utter_ask_correctness_of_given_details
@@ -208,7 +209,7 @@
  - utter_ask_number_of_months_for_fixed_account
 * number of months
  - utter_ask_way_of_interest_receiving
-* after completion
+* monthly
  - utter_deposit_amount
 * selection
  - utter_ask_correctness_of_given_details
@@ -227,7 +228,7 @@
  - utter_ask_number_of_months_for_fixed_account
 * number of months
  - utter_ask_way_of_interest_receiving
-* after completion
+* monthly
  - utter_deposit_amount
 * selection
  - utter_ask_correctness_of_given_details
@@ -244,7 +245,7 @@
  - utter_ask_number_of_months_for_fixed_account
 * number of months
  - utter_ask_way_of_interest_receiving
-* after completion
+* monthly
  - utter_deposit_amount
 * selection
  - utter_ask_correctness_of_given_details

@@ -1,0 +1,380 @@
+Rasa process starting
+Rasa process starting
+Rasa process starting
+Rasa process starting
+From /home/lakshika/.local/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+Restoring parameters from rasa_models/current/nlu/component_4_EmbeddingIntentClassifier.ckpt
+Generating grammar tables from /usr/lib/python3.6/lib2to3/Grammar.txt
+Generating grammar tables from /usr/lib/python3.6/lib2to3/PatternGrammar.txt
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+From /home/lakshika/.local/lib/python3.6/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /home/lakshika/.local/lib/python3.6/site-packages/tensorflow/python/keras/backend.py:4010: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /home/lakshika/.local/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Available web server routes: 
+hello                                              HEAD, OPTIONS, GET             /
+list_trackers                                      HEAD, OPTIONS, GET             /conversations
+execute_action                                     OPTIONS, POST                  /conversations/[sender_id]/execute
+log_message                                        OPTIONS, POST                  /conversations/[sender_id]/messages
+predict                                            OPTIONS, POST                  /conversations/[sender_id]/predict
+respond                                            GET, HEAD, OPTIONS, POST       /conversations/[sender_id]/respond
+retrieve_story                                     HEAD, OPTIONS, GET             /conversations/[sender_id]/story
+retrieve_tracker                                   HEAD, OPTIONS, GET             /conversations/[sender_id]/tracker
+replace_events                                     PUT, OPTIONS                   /conversations/[sender_id]/tracker/events
+get_domain                                         HEAD, OPTIONS, GET             /domain
+evaluate_stories                                   OPTIONS, POST                  /evaluate
+continue_training                                  OPTIONS, POST                  /finetune
+load_model                                         OPTIONS, POST                  /model
+parse                                              OPTIONS, POST                  /parse
+tracker_predict                                    OPTIONS, POST                  /predict
+static                                             HEAD, OPTIONS, GET             /static/[filename]
+status                                             HEAD, OPTIONS, GET             /status
+version                                            HEAD, OPTIONS, GET             /version
+custom_webhook_CmdlineInput.health                 HEAD, OPTIONS, GET             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                OPTIONS, POST                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id '11'.
+Caught an exception during respond.
+Traceback (most recent call last):
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/server.py", line 392, in respond
+    sender_id=sender_id)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/agent.py", line 402, in handle_text
+    return self.handle_message(msg, message_preprocessor)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/agent.py", line 322, in handle_message
+    return processor.handle_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 73, in handle_message
+    tracker = self.log_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 119, in log_message
+    self._handle_message_with_tracker(message, tracker)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 260, in _handle_message_with_tracker
+    parse_data = self._parse_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 245, in _parse_message
+    parse_data = self.interpreter.parse(message.text)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/interpreter.py", line 245, in parse
+    result = self.interpreter.parse(text)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_nlu/model.py", line 370, in parse
+    component.process(message, **self.context)
+  File "/home/lakshika/Desktop/bot-example-our/rasa_components/NewComponent.py", line 52, in process
+    predicted_intent, conf = predictIntent(message.text)
+  File "/home/lakshika/Desktop/bot-example-our/custom_intent_predictor/predict.py", line 116, in predictIntent
+    loaded_model_SVM,loaded_model_NB,loaded_model_LR,word_array_read = loadmodels()
+  File "/home/lakshika/Desktop/bot-example-our/custom_intent_predictor/predict.py", line 43, in loadmodels
+    loaded_model_SVM = pickle.load(open(filenameSVM, 'rb'))
+FileNotFoundError: [Errno 2] No such file or directory: '../custom_nlu_models/finalized_model_SVM.sav'
+Recreating tracker for id '11'
+Caught an exception during respond.
+Traceback (most recent call last):
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/server.py", line 392, in respond
+    sender_id=sender_id)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/agent.py", line 402, in handle_text
+    return self.handle_message(msg, message_preprocessor)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/agent.py", line 322, in handle_message
+    return processor.handle_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 73, in handle_message
+    tracker = self.log_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 119, in log_message
+    self._handle_message_with_tracker(message, tracker)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 260, in _handle_message_with_tracker
+    parse_data = self._parse_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 245, in _parse_message
+    parse_data = self.interpreter.parse(message.text)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/interpreter.py", line 245, in parse
+    result = self.interpreter.parse(text)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_nlu/model.py", line 370, in parse
+    component.process(message, **self.context)
+  File "/home/lakshika/Desktop/bot-example-our/rasa_components/NewComponent.py", line 52, in process
+    predicted_intent, conf = predictIntent(message.text)
+  File "/home/lakshika/Desktop/bot-example-our/custom_intent_predictor/predict.py", line 116, in predictIntent
+    loaded_model_SVM,loaded_model_NB,loaded_model_LR,word_array_read = loadmodels()
+  File "/home/lakshika/Desktop/bot-example-our/custom_intent_predictor/predict.py", line 43, in loadmodels
+    loaded_model_SVM = pickle.load(open(filenameSVM, 'rb'))
+FileNotFoundError: [Errno 2] No such file or directory: '../custom_nlu_models/finalized_model_SVM.sav'
+Recreating tracker for id '11'
+Caught an exception during respond.
+Traceback (most recent call last):
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/server.py", line 392, in respond
+    sender_id=sender_id)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/agent.py", line 402, in handle_text
+    return self.handle_message(msg, message_preprocessor)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/agent.py", line 322, in handle_message
+    return processor.handle_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 73, in handle_message
+    tracker = self.log_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 119, in log_message
+    self._handle_message_with_tracker(message, tracker)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 260, in _handle_message_with_tracker
+    parse_data = self._parse_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 245, in _parse_message
+    parse_data = self.interpreter.parse(message.text)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/interpreter.py", line 245, in parse
+    result = self.interpreter.parse(text)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_nlu/model.py", line 370, in parse
+    component.process(message, **self.context)
+  File "/home/lakshika/Desktop/bot-example-our/rasa_components/NewComponent.py", line 52, in process
+    predicted_intent, conf = predictIntent(message.text)
+  File "/home/lakshika/Desktop/bot-example-our/custom_intent_predictor/predict.py", line 116, in predictIntent
+    loaded_model_SVM,loaded_model_NB,loaded_model_LR,word_array_read = loadmodels()
+  File "/home/lakshika/Desktop/bot-example-our/custom_intent_predictor/predict.py", line 43, in loadmodels
+    loaded_model_SVM = pickle.load(open(filenameSVM, 'rb'))
+FileNotFoundError: [Errno 2] No such file or directory: '../custom_nlu_models/finalized_model_SVM.sav'
+Recreating tracker for id '11'
+Caught an exception during respond.
+Traceback (most recent call last):
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/server.py", line 392, in respond
+    sender_id=sender_id)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/agent.py", line 402, in handle_text
+    return self.handle_message(msg, message_preprocessor)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/agent.py", line 322, in handle_message
+    return processor.handle_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 73, in handle_message
+    tracker = self.log_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 119, in log_message
+    self._handle_message_with_tracker(message, tracker)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 260, in _handle_message_with_tracker
+    parse_data = self._parse_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 245, in _parse_message
+    parse_data = self.interpreter.parse(message.text)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/interpreter.py", line 245, in parse
+    result = self.interpreter.parse(text)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_nlu/model.py", line 370, in parse
+    component.process(message, **self.context)
+  File "/home/lakshika/Desktop/bot-example-our/rasa_components/NewComponent.py", line 52, in process
+    predicted_intent, conf = predictIntent(message.text)
+  File "/home/lakshika/Desktop/bot-example-our/custom_intent_predictor/predict.py", line 116, in predictIntent
+    loaded_model_SVM,loaded_model_NB,loaded_model_LR,word_array_read = loadmodels()
+  File "/home/lakshika/Desktop/bot-example-our/custom_intent_predictor/predict.py", line 43, in loadmodels
+    loaded_model_SVM = pickle.load(open(filenameSVM, 'rb'))
+FileNotFoundError: [Errno 2] No such file or directory: '../custom_nlu_models/finalized_model_SVM.sav'
+Recreating tracker for id '11'
+Caught an exception during respond.
+Traceback (most recent call last):
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/server.py", line 392, in respond
+    sender_id=sender_id)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/agent.py", line 402, in handle_text
+    return self.handle_message(msg, message_preprocessor)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/agent.py", line 322, in handle_message
+    return processor.handle_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 73, in handle_message
+    tracker = self.log_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 119, in log_message
+    self._handle_message_with_tracker(message, tracker)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 260, in _handle_message_with_tracker
+    parse_data = self._parse_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 245, in _parse_message
+    parse_data = self.interpreter.parse(message.text)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/interpreter.py", line 245, in parse
+    result = self.interpreter.parse(text)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_nlu/model.py", line 370, in parse
+    component.process(message, **self.context)
+  File "/home/lakshika/Desktop/bot-example-our/rasa_components/NewComponent.py", line 52, in process
+    predicted_intent, conf = predictIntent(message.text)
+  File "/home/lakshika/Desktop/bot-example-our/custom_intent_predictor/predict.py", line 116, in predictIntent
+    loaded_model_SVM,loaded_model_NB,loaded_model_LR,word_array_read = loadmodels()
+  File "/home/lakshika/Desktop/bot-example-our/custom_intent_predictor/predict.py", line 43, in loadmodels
+    loaded_model_SVM = pickle.load(open(filenameSVM, 'rb'))
+FileNotFoundError: [Errno 2] No such file or directory: '../custom_nlu_models/finalized_model_SVM.sav'
+Recreating tracker for id '11'
+Caught an exception during respond.
+Traceback (most recent call last):
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/server.py", line 392, in respond
+    sender_id=sender_id)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/agent.py", line 402, in handle_text
+    return self.handle_message(msg, message_preprocessor)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/agent.py", line 322, in handle_message
+    return processor.handle_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 73, in handle_message
+    tracker = self.log_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 119, in log_message
+    self._handle_message_with_tracker(message, tracker)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 260, in _handle_message_with_tracker
+    parse_data = self._parse_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 245, in _parse_message
+    parse_data = self.interpreter.parse(message.text)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/interpreter.py", line 245, in parse
+    result = self.interpreter.parse(text)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_nlu/model.py", line 370, in parse
+    component.process(message, **self.context)
+  File "/home/lakshika/Desktop/bot-example-our/rasa_components/NewComponent.py", line 52, in process
+    predicted_intent, conf = predictIntent(message.text)
+  File "/home/lakshika/Desktop/bot-example-our/custom_intent_predictor/predict.py", line 116, in predictIntent
+    loaded_model_SVM,loaded_model_NB,loaded_model_LR,word_array_read = loadmodels()
+  File "/home/lakshika/Desktop/bot-example-our/custom_intent_predictor/predict.py", line 43, in loadmodels
+    loaded_model_SVM = pickle.load(open(filenameSVM, 'rb'))
+FileNotFoundError: [Errno 2] No such file or directory: '../custom_nlu_models/finalized_model_SVM.sav'
+Recreating tracker for id '11'
+Caught an exception during respond.
+Traceback (most recent call last):
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/server.py", line 392, in respond
+    sender_id=sender_id)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/agent.py", line 402, in handle_text
+    return self.handle_message(msg, message_preprocessor)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/agent.py", line 322, in handle_message
+    return processor.handle_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 73, in handle_message
+    tracker = self.log_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 119, in log_message
+    self._handle_message_with_tracker(message, tracker)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 260, in _handle_message_with_tracker
+    parse_data = self._parse_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 245, in _parse_message
+    parse_data = self.interpreter.parse(message.text)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/interpreter.py", line 245, in parse
+    result = self.interpreter.parse(text)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_nlu/model.py", line 370, in parse
+    component.process(message, **self.context)
+  File "/home/lakshika/Desktop/bot-example-our/rasa_components/NewComponent.py", line 52, in process
+    predicted_intent, conf = predictIntent(message.text)
+  File "/home/lakshika/Desktop/bot-example-our/custom_intent_predictor/predict.py", line 116, in predictIntent
+    loaded_model_SVM,loaded_model_NB,loaded_model_LR,word_array_read = loadmodels()
+  File "/home/lakshika/Desktop/bot-example-our/custom_intent_predictor/predict.py", line 43, in loadmodels
+    loaded_model_SVM = pickle.load(open(filenameSVM, 'rb'))
+FileNotFoundError: [Errno 2] No such file or directory: '../custom_nlu_models/finalized_model_SVM.sav'
+Recreating tracker for id '11'
+Caught an exception during respond.
+Traceback (most recent call last):
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/server.py", line 392, in respond
+    sender_id=sender_id)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/agent.py", line 402, in handle_text
+    return self.handle_message(msg, message_preprocessor)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/agent.py", line 322, in handle_message
+    return processor.handle_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 73, in handle_message
+    tracker = self.log_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 119, in log_message
+    self._handle_message_with_tracker(message, tracker)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 260, in _handle_message_with_tracker
+    parse_data = self._parse_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 245, in _parse_message
+    parse_data = self.interpreter.parse(message.text)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/interpreter.py", line 245, in parse
+    result = self.interpreter.parse(text)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_nlu/model.py", line 370, in parse
+    component.process(message, **self.context)
+  File "/home/lakshika/Desktop/bot-example-our/rasa_components/NewComponent.py", line 52, in process
+    predicted_intent, conf = predictIntent(message.text)
+  File "/home/lakshika/Desktop/bot-example-our/custom_intent_predictor/predict.py", line 116, in predictIntent
+    loaded_model_SVM,loaded_model_NB,loaded_model_LR,word_array_read = loadmodels()
+  File "/home/lakshika/Desktop/bot-example-our/custom_intent_predictor/predict.py", line 43, in loadmodels
+    loaded_model_SVM = pickle.load(open(filenameSVM, 'rb'))
+FileNotFoundError: [Errno 2] No such file or directory: '../custom_nlu_models/finalized_model_SVM.sav'
+Recreating tracker for id '11'
+Caught an exception during respond.
+Traceback (most recent call last):
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/server.py", line 392, in respond
+    sender_id=sender_id)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/agent.py", line 402, in handle_text
+    return self.handle_message(msg, message_preprocessor)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/agent.py", line 322, in handle_message
+    return processor.handle_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 73, in handle_message
+    tracker = self.log_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 119, in log_message
+    self._handle_message_with_tracker(message, tracker)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 260, in _handle_message_with_tracker
+    parse_data = self._parse_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 245, in _parse_message
+    parse_data = self.interpreter.parse(message.text)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/interpreter.py", line 245, in parse
+    result = self.interpreter.parse(text)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_nlu/model.py", line 370, in parse
+    component.process(message, **self.context)
+  File "/home/lakshika/Desktop/bot-example-our/rasa_components/NewComponent.py", line 52, in process
+    predicted_intent, conf = predictIntent(message.text)
+  File "/home/lakshika/Desktop/bot-example-our/custom_intent_predictor/predict.py", line 116, in predictIntent
+    loaded_model_SVM,loaded_model_NB,loaded_model_LR,word_array_read = loadmodels()
+  File "/home/lakshika/Desktop/bot-example-our/custom_intent_predictor/predict.py", line 43, in loadmodels
+    loaded_model_SVM = pickle.load(open(filenameSVM, 'rb'))
+FileNotFoundError: [Errno 2] No such file or directory: '../custom_nlu_models/finalized_model_SVM.sav'
+Recreating tracker for id '11'
+Caught an exception during respond.
+Traceback (most recent call last):
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/server.py", line 392, in respond
+    sender_id=sender_id)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/agent.py", line 402, in handle_text
+    return self.handle_message(msg, message_preprocessor)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/agent.py", line 322, in handle_message
+    return processor.handle_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 73, in handle_message
+    tracker = self.log_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 119, in log_message
+    self._handle_message_with_tracker(message, tracker)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 260, in _handle_message_with_tracker
+    parse_data = self._parse_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 245, in _parse_message
+    parse_data = self.interpreter.parse(message.text)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/interpreter.py", line 245, in parse
+    result = self.interpreter.parse(text)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_nlu/model.py", line 370, in parse
+    component.process(message, **self.context)
+  File "/home/lakshika/Desktop/bot-example-our/rasa_components/NewComponent.py", line 52, in process
+    predicted_intent, conf = predictIntent(message.text)
+  File "/home/lakshika/Desktop/bot-example-our/custom_intent_predictor/predict.py", line 116, in predictIntent
+    loaded_model_SVM,loaded_model_NB,loaded_model_LR,word_array_read = loadmodels()
+  File "/home/lakshika/Desktop/bot-example-our/custom_intent_predictor/predict.py", line 43, in loadmodels
+    loaded_model_SVM = pickle.load(open(filenameSVM, 'rb'))
+FileNotFoundError: [Errno 2] No such file or directory: '../custom_nlu_models/finalized_model_SVM.sav'
+Recreating tracker for id '11'
+Caught an exception during respond.
+Traceback (most recent call last):
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/server.py", line 392, in respond
+    sender_id=sender_id)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/agent.py", line 402, in handle_text
+    return self.handle_message(msg, message_preprocessor)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/agent.py", line 322, in handle_message
+    return processor.handle_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 73, in handle_message
+    tracker = self.log_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 119, in log_message
+    self._handle_message_with_tracker(message, tracker)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 260, in _handle_message_with_tracker
+    parse_data = self._parse_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 245, in _parse_message
+    parse_data = self.interpreter.parse(message.text)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/interpreter.py", line 245, in parse
+    result = self.interpreter.parse(text)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_nlu/model.py", line 370, in parse
+    component.process(message, **self.context)
+  File "/home/lakshika/Desktop/bot-example-our/rasa_components/NewComponent.py", line 52, in process
+    predicted_intent, conf = predictIntent(message.text)
+  File "/home/lakshika/Desktop/bot-example-our/custom_intent_predictor/predict.py", line 116, in predictIntent
+    loaded_model_SVM,loaded_model_NB,loaded_model_LR,word_array_read = loadmodels()
+  File "/home/lakshika/Desktop/bot-example-our/custom_intent_predictor/predict.py", line 43, in loadmodels
+    loaded_model_SVM = pickle.load(open(filenameSVM, 'rb'))
+FileNotFoundError: [Errno 2] No such file or directory: '../custom_nlu_models/finalized_model_SVM.sav'
+Recreating tracker for id '11'
+Caught an exception during respond.
+Traceback (most recent call last):
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/server.py", line 392, in respond
+    sender_id=sender_id)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/agent.py", line 402, in handle_text
+    return self.handle_message(msg, message_preprocessor)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/agent.py", line 322, in handle_message
+    return processor.handle_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 73, in handle_message
+    tracker = self.log_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 119, in log_message
+    self._handle_message_with_tracker(message, tracker)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 260, in _handle_message_with_tracker
+    parse_data = self._parse_message(message)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/processor.py", line 245, in _parse_message
+    parse_data = self.interpreter.parse(message.text)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_core/interpreter.py", line 245, in parse
+    result = self.interpreter.parse(text)
+  File "/home/lakshika/.local/lib/python3.6/site-packages/rasa_nlu/model.py", line 370, in parse
+    component.process(message, **self.context)
+  File "/home/lakshika/Desktop/bot-example-our/rasa_components/NewComponent.py", line 52, in process
+    predicted_intent, conf = predictIntent(message.text)
+  File "/home/lakshika/Desktop/bot-example-our/custom_intent_predictor/predict.py", line 116, in predictIntent
+    loaded_model_SVM,loaded_model_NB,loaded_model_LR,word_array_read = loadmodels()
+  File "/home/lakshika/Desktop/bot-example-our/custom_intent_predictor/predict.py", line 43, in loadmodels
+    loaded_model_SVM = pickle.load(open(filenameSVM, 'rb'))
+FileNotFoundError: [Errno 2] No such file or directory: '../custom_nlu_models/finalized_model_SVM.sav'

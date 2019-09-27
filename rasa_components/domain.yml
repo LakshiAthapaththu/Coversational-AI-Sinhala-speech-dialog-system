@@ -34,7 +34,7 @@ templates:
   utter_ask_way_of_interest_receiving:
     - "How would you like to take back the interest?"
   utter_thankyou:
-    - "Thank you for the details we will proceed your request and let you no"
+    - "Thank you for the details we will proceed your request and let you know"
   utter_for_try_again:
     - "Start from the begining"
   utter_for_stop:
