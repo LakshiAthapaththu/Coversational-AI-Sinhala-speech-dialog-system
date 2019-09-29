@@ -4,7 +4,20 @@ import requests
 headers = {
     'Content-type': 'application/json',
 }
-all1 = ['{"query":"මට නව ගිණුමක් විවෘත කරන්න ඕන"}','{"query":"මට ඕනි ඉතිරිකිරීමේ ගිණුමක්"}','{"query":"යොවුන් ඉතුරුම් ගිණුමක්"}', '{"query":"එක"}','{"query":"ඔව් ඔක්කොම නිවැරදියි"}'
+# all1 = ['{"query":"මට නව ගිණුමක් විවෘත කරන්න ඕන"}','{"query":"මට ඕනි ඉතිරිකිරීමේ ගිණුමක්"}','{"query":"යොවුන් ඉතුරුම් ගිණුමක්"}', '{"query":"එක"}','{"query":"ඔව් ඔක්කොම නිවැරදියි"}'
+#        ,'{"query":"ඔව් ගිණුම විවෘත කිරීම තහවුරු කරනවා"}']
+#
+# for data in all1:
+#     print("User: ", data)
+#     data = data.encode('utf-8')
+#     response = requests.post('http://localhost:5005/conversations/11/respond', headers=headers, data=data)
+#     print (response.json())
+
+
+
+# story 1
+
+all1 = ['{"query":"මට නව ගිණුමක් විවෘත කරන්න ඕන"}', '{"query":"මට ඕනි ඉතිරිකිරීමේ ගිණුමක්"}', '{"query":"යොවුන් ඉතුරුම් ගිණුමක්"}', '{"query":"එක"}','{"query":"ho hi hi jnsns"}','{"query":"ඔව් ඔක්කොම නිවැරදියි"}'
        ,'{"query":"ඔව් ගිණුම විවෘත කිරීම තහවුරු කරනවා"}']
 
 for data in all1:
@@ -12,19 +25,6 @@ for data in all1:
     data = data.encode('utf-8')
     response = requests.post('http://localhost:5005/conversations/11/respond', headers=headers, data=data)
     print (response.json())
-
-
-
-# story 1
-
-# all1 = ['{"query":"මට නව ගිණුමක් විවෘත කරන්න ඕන"}', '{"query":"මට ඕනි ඉතිරිකිරීමේ ගිණුමක්"}', '{"query":"යොවුන් ඉතුරුම් ගිණුමක්"}', '{"query":"එක"}','{"query":"ඔව් ඔක්කොම නිවැරදියි"}'
-#        ,'{"query":"ඔව් ගිණුම විවෘත කිරීම තහවුරු කරනවා"}']
-#
-# for data in all1:
-
-#     data = data.encode('utf-8')
-#     response = requests.post('http://localhost:5005/conversations/11/respond', headers=headers, data=data)
-#     print (response.json())
 
 # #story 2
 # all1 = ['{"query":"ගිණුමක් විවෘත කරන්න ඕන"}', '{"query":"ඉතුරුම් ගිණුමක් හදන්න"}', '{"query":"ජේයෂ්ට පුරවැසි ඉතුරුම් ගිණුමක්"}', '{"query":"එක"}','{"query":"මේ ඩීටේයිල්ස් හරි"}',

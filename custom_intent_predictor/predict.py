@@ -1,3 +1,4 @@
+# coding=utf-8
 import pickle
 from scipy.sparse import csr_matrix
 from sklearn.feature_extraction.text import TfidfTransformer
@@ -60,7 +61,8 @@ def predictEnsemble(loaded_model_SVM,loaded_model_NB,loaded_model_LR,sentence_tf
 	confLR = (max(loaded_model_LR.predict_proba([bag])[0]))
 
 
-	# print(confSVM," ",confNB," ",confLR)
+	print(predSVM," ",predNB," ",predLR)
+	print(confSVM," ",confNB," ",confLR)
 
 
 	# accuracy = accuracy_score(labels_test, pred)
@@ -71,6 +73,9 @@ def predictEnsemble(loaded_model_SVM,loaded_model_NB,loaded_model_LR,sentence_tf
 
 	l = [predSVM,predNB,predLR]
 	conf = [confSVM,confNB,confLR]
+	returned_conf = max(conf)
+
+
 
 	if(l[0] != l[1] and l[1]!=l[2] and l[0] != l[2]):
 		most_voted = l[(conf.index(max(conf)))]
@@ -78,9 +83,12 @@ def predictEnsemble(loaded_model_SVM,loaded_model_NB,loaded_model_LR,sentence_tf
 	else:
 		most_voted = max(set(l), key = l.count)
 
+	if(min(conf)<0.5):
+		returned_conf = min(conf)
+
 	# most_voted = max(set(l), key = l.count)
 	# return most_voted
-	return most_voted, max(conf)
+	return most_voted, returned_conf
 
 def mapIntentDescription(intent_num):
     mapper = {
@@ -125,7 +133,7 @@ def predictIntent(sentence):
 	return mapIntentDescription(most_voted), conf
 
 
-# print(predictIntent("මට ඕන ස්ථාවර තැන්පතුවක්"))
+# print(predictIntent("මට නව ගිණුමක් විවෘත කරන්න ඕන"))
 
 
 

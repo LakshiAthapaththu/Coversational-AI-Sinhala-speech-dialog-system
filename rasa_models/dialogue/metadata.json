@@ -1,7 +1,9 @@
 {
   "action_fingerprints": {
     "action_listen": {
-      "slots": []
+      "slots": [
+        "amount"
+      ]
     },
     "action_restart": {
       "slots": []
@@ -21,7 +23,7 @@
     "rasa_core.policies.fallback.FallbackPolicy",
     "rasa_core.policies.form_policy.FormPolicy"
   ],
-  "trained_at": "20190927-143627",
+  "trained_at": "20190929-130737",
   "rasa_core": "0.14.5",
   "tensorflow": "1.13.2",
   "sklearn": "0.20.4"

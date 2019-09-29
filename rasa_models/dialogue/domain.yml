@@ -16,7 +16,10 @@ actions:
 - utter_default
 config:
   store_entities_as_slots: true
-entities: []
+entities:
+- num_of_months
+- acc_type
+- amount
 forms: []
 intents:
 - open a new bank account:
@@ -47,7 +50,25 @@ intents:
     use_entities: true
 - monthly:
     use_entities: true
-slots: {}
+slots:
+  amount:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.CategoricalSlot
+    values:
+    - one
+    - two
+    - three
+    - four
+    - five
+  num_of_months:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.CategoricalSlot
+    values:
+    - three
+    - six
+    - twelve
 templates:
   utter_ask_account_type:
   - text: What type of account you want to open?

@@ -219,38 +219,110 @@
       },
       {
         "intent": "account type",
+        "entities": [
+          {
+            "start": 0,
+            "end": 22,
+            "value": "සාමානය ඉතුරුම් ගිණුමක්",
+            "entity": "acc_type"
+          }
+        ],
         "text": "සාමානය ඉතුරුම් ගිණුමක්"
       },
       {
         "intent": "account type",
+        "entities": [
+          {
+            "start": 0,
+            "end": 22,
+            "value": "කාන්තා ඉතුරුම් ගිණුමක්",
+            "entity": "acc_type"
+          }
+        ],
         "text": "කාන්තා ඉතුරුම් ගිණුමක්"
       },
       {
         "intent": "account type",
+        "entities": [
+          {
+            "start": 0,
+            "end": 22,
+            "value": "යොවුන් ඉතුරුම් ගිණුමක්",
+            "entity": "acc_type"
+          }
+        ],
         "text": "යොවුන් ඉතුරුම් ගිණුමක්"
       },
       {
         "intent": "account type",
+        "entities": [
+          {
+            "start": 0,
+            "end": 30,
+            "value": "ජේයෂ්ට පුරවැසි ඉතුරුම් ගිණුමක්",
+            "entity": "acc_type"
+          }
+        ],
         "text": "ජේයෂ්ට පුරවැසි ඉතුරුම් ගිණුමක්"
       },
       {
         "intent": "selection",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "එක",
+            "entity": "amount"
+          }
+        ],
         "text": "එක"
       },
       {
         "intent": "selection",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "දෙක",
+            "entity": "amount"
+          }
+        ],
         "text": "දෙක"
       },
       {
         "intent": "selection",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "තුන",
+            "entity": "amount"
+          }
+        ],
         "text": "තුන"
       },
       {
         "intent": "selection",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "හතර",
+            "entity": "amount"
+          }
+        ],
         "text": "හතර"
       },
       {
         "intent": "selection",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "පහ",
+            "entity": "amount"
+          }
+        ],
         "text": "පහ"
       },
       {
@@ -623,26 +695,74 @@
       },
       {
         "intent": "number of months",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "මාස තුනයි",
+            "entity": "num_of_months"
+          }
+        ],
         "text": "මාස තුනයි"
       },
       {
         "intent": "number of months",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "මාස හයයි",
+            "entity": "num of months"
+          }
+        ],
         "text": "මාස හයයි"
       },
       {
         "intent": "number of months",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "මාස දොළහයි",
+            "entity": "num_of_months"
+          }
+        ],
         "text": "මාස දොළහයි"
       },
       {
         "intent": "number of months",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "මාස තුන",
+            "entity": "num_of_months"
+          }
+        ],
         "text": "මාස තුන"
       },
       {
         "intent": "number of months",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "මාස හය",
+            "entity": "num_of_months"
+          }
+        ],
         "text": "මාස හය"
       },
       {
         "intent": "number of months",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "මාස දොළහ",
+            "entity": "num_of_months"
+          }
+        ],
         "text": "මාස දොළහ"
       },
       {

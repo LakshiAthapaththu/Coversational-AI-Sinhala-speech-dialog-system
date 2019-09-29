@@ -5,7 +5,8 @@
  - utter_type_of_savings_account_type
 * account type
  - utter_deposit_amount
-* selection
+* selection{"amount": "එක"}
+ - slot{"amount": "one"}
  - utter_ask_correctness_of_given_details
 * correct detailas
  - utter_ask_for_confirmation

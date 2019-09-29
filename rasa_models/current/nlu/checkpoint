@@ -1,2 +1,2 @@
-model_checkpoint_path: "/home/lakshika/Desktop/bot-example-our/rasa_components/../rasa_models/current/nlu/component_4_EmbeddingIntentClassifier.ckpt"
-all_model_checkpoint_paths: "/home/lakshika/Desktop/bot-example-our/rasa_components/../rasa_models/current/nlu/component_4_EmbeddingIntentClassifier.ckpt"
+model_checkpoint_path: "/home/lakshika/Desktop/bot-example-our/rasa_components/../rasa_models/current/nlu/component_5_EmbeddingIntentClassifier.ckpt"
+all_model_checkpoint_paths: "/home/lakshika/Desktop/bot-example-our/rasa_components/../rasa_models/current/nlu/component_5_EmbeddingIntentClassifier.ckpt"

@@ -1,3 +1,4 @@
+# coding=utf-8
 import logging
 import pprint
 from rasa_nlu.training_data import load_data
@@ -15,7 +16,7 @@ def run_nlu(nlu_path):
     # file_read = open('test_sentences','r')
     # for line in file_read:
     #     sentence = line.strip()
-    pprint.pprint(interpreter.parse('සාමානය ඉතුරුම් ගිණුමක්'))
+    pprint.pprint(interpreter.parse('මාස හය'))
 
 
 

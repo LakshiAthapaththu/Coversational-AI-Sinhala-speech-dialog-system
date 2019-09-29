@@ -1,3 +1,24 @@
+slots:
+   num_of_months:
+      type: categorical
+      values:
+      - three
+      - six
+      - twelve
+   amount:
+      type: categorical
+      values:
+      - one
+      - two
+      - three
+      - four
+      - five
+
+entities:
+- num_of_months
+- acc_type
+- amount
+
 intents:
  - open a new bank account
  - savings account
