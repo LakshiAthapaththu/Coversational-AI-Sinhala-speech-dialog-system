@@ -1,6 +1,11 @@
 pipeline:
+- name: "CustomTokenizer.Tokenizer"
+- name: "CustomFeaturizer.Featurizer"
+- name: "CustomIntentClassifier.IntentClassifier"
+- name: "Mapper.Mapper"
 - name: "tokenizer_whitespace"
 - name: "CRFEntityExtractor"
-- name: "NewComponent.new_component"
+
+
 
 

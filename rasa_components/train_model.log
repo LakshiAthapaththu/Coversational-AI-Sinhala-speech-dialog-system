@@ -4434,3 +4434,302 @@ WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') t
 WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
 WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
 INFO:rasa_core.agent:Persisted model to '/home/lakshika/Desktop/bot-example-our/rasa_models/dialogue'
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 179 (14 distinct intents)
+	- Found intents: 'fixed account', 'account type', 'selection', 'try again', 'number of months', 'not confirmation', 'open a new bank account', 'don't try again', 'incorrect details', 'correct detailas', 'after completion', 'monthly', 'savings account', 'confirmation'
+	- entity examples: 15 (4 distinct entities)
+	- found entities: 'amount', 'acc_type', 'num_of_months', 'num of months'
+
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component Tokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component new_component
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/lakshika/Desktop/bot-example-our/rasa_models/current/nlu'
+DEBUG:rasa_core.training.generator:Generated trackers will be deduplicated based on their unique last 6 states.
+DEBUG:rasa_core.training.generator:Number of augmentation rounds is 3
+DEBUG:rasa_core.training.generator:Starting data generation round 0 ... (with 1 trackers)
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+DEBUG:rasa_core.training.generator:Finished phase (25 training samples found).
+DEBUG:rasa_core.training.generator:Data generation rounds finished.
+DEBUG:rasa_core.training.generator:Found 0 unused checkpoints
+DEBUG:rasa_core.training.generator:Starting augmentation round 0 ... (with 20 trackers)
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+DEBUG:rasa_core.training.generator:Finished phase (189 training samples found).
+DEBUG:rasa_core.training.generator:Starting augmentation round 1 ... (with 20 trackers)
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+DEBUG:rasa_core.training.generator:Finished phase (377 training samples found).
+DEBUG:rasa_core.training.generator:Starting augmentation round 2 ... (with 20 trackers)
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+DEBUG:rasa_core.training.generator:Finished phase (588 training samples found).
+DEBUG:rasa_core.training.generator:Found 588 training trackers.
+DEBUG:rasa_core.training.generator:Subsampled to 200 augmented training trackers.
+DEBUG:rasa_core.training.generator:There are 25 original trackers.
+DEBUG:rasa_core.agent:Agent trainer got kwargs: {}
+DEBUG:rasa_core.featurizers:Creating states and action examples from collected trackers (by MaxHistoryTrackerFeaturizer(BinarySingleStateFeaturizer))...
+DEBUG:rasa_core.featurizers:Created 257 action examples.
+WARNING:tensorflow:From /home/lakshika/.local/lib/python3.6/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /home/lakshika/.local/lib/python3.6/site-packages/tensorflow/python/keras/backend.py:4010: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+DEBUG:rasa_core.policies.keras_policy:None
+INFO:rasa_core.policies.keras_policy:Fitting model with 257 total samples and a validation split of 0.1
+DEBUG:rasa_core.policies.policy:Parameters ignored by `model.fit(...)`: {}
+WARNING:tensorflow:From /home/lakshika/.local/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+INFO:rasa_core.policies.keras_policy:Done fitting keras policy model
+DEBUG:rasa_core.featurizers:Creating states and action examples from collected trackers (by MaxHistoryTrackerFeaturizer(SingleStateFeaturizer))...
+DEBUG:rasa_core.featurizers:Created 82 action examples.
+DEBUG:rasa_core.policies.memoization:Memorized 80 unique examples.
+DEBUG:rasa_core.featurizers:Creating states and action examples from collected trackers (by MaxHistoryTrackerFeaturizer(SingleStateFeaturizer))...
+DEBUG:rasa_core.featurizers:Created 48 action examples.
+DEBUG:rasa_core.policies.memoization:Memorized 0 unique examples.
+INFO:rasa_core.agent:Model directory ../rasa_models/dialogue exists and contains old model files. All files will be overwritten.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+WARNING:rasa_core.slots:Categorical slot 'amount' is set to a value ('එක') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+INFO:rasa_core.agent:Persisted model to '/home/lakshika/Desktop/bot-example-our/rasa_models/dialogue'
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 179 (14 distinct intents)
+	- Found intents: 'fixed account', 'selection', 'savings account', 'incorrect details', 'account type', 'number of months', 'after completion', 'correct detailas', 'monthly', 'not confirmation', 'don't try again', 'open a new bank account', 'confirmation', 'try again'
+	- entity examples: 15 (4 distinct entities)
+	- found entities: 'amount', 'acc_type', 'num_of_months', 'num of months'
+
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component Tokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component new_component
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/lakshika/Desktop/bot-example-our/rasa_models/current/nlu'
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 179 (14 distinct intents)
+	- Found intents: 'number of months', 'fixed account', 'after completion', 'open a new bank account', 'incorrect details', 'selection', 'savings account', 'account type', 'try again', 'correct detailas', 'don't try again', 'monthly', 'not confirmation', 'confirmation'
+	- entity examples: 15 (4 distinct entities)
+	- found entities: 'num of months', 'acc_type', 'amount', 'num_of_months'
+
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 179 (14 distinct intents)
+	- Found intents: 'fixed account', 'number of months', 'monthly', 'not confirmation', 'savings account', 'account type', 'try again', 'incorrect details', 'selection', 'open a new bank account', 'correct detailas', 'after completion', 'confirmation', 'don't try again'
+	- entity examples: 15 (4 distinct entities)
+	- found entities: 'amount', 'acc_type', 'num_of_months', 'num of months'
+
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 179 (14 distinct intents)
+	- Found intents: 'selection', 'try again', 'confirmation', 'open a new bank account', 'savings account', 'account type', 'not confirmation', 'fixed account', 'correct detailas', 'number of months', 'monthly', 'don't try again', 'incorrect details', 'after completion'
+	- entity examples: 15 (4 distinct entities)
+	- found entities: 'num of months', 'acc_type', 'amount', 'num_of_months'
+
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component Tokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component Featurizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component new_component
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/lakshika/Desktop/bot-example-our/rasa_models/current/nlu'
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 179 (14 distinct intents)
+	- Found intents: 'monthly', 'confirmation', 'selection', 'correct detailas', 'not confirmation', 'after completion', 'open a new bank account', 'savings account', 'account type', 'incorrect details', 'number of months', 'try again', 'don't try again', 'fixed account'
+	- entity examples: 15 (4 distinct entities)
+	- found entities: 'acc_type', 'amount', 'num_of_months', 'num of months'
+
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 179 (14 distinct intents)
+	- Found intents: 'savings account', 'open a new bank account', 'selection', 'account type', 'after completion', 'correct detailas', 'incorrect details', 'monthly', 'try again', 'don't try again', 'confirmation', 'number of months', 'fixed account', 'not confirmation'
+	- entity examples: 15 (4 distinct entities)
+	- found entities: 'amount', 'acc_type', 'num_of_months', 'num of months'
+
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component Tokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component Featurizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component new_component
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/lakshika/Desktop/bot-example-our/rasa_models/current/nlu'
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 179 (14 distinct intents)
+	- Found intents: 'not confirmation', 'fixed account', 'don't try again', 'account type', 'correct detailas', 'after completion', 'savings account', 'selection', 'confirmation', 'number of months', 'open a new bank account', 'try again', 'monthly', 'incorrect details'
+	- entity examples: 15 (4 distinct entities)
+	- found entities: 'num_of_months', 'amount', 'acc_type', 'num of months'
+
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component Tokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component Featurizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component new_component
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/lakshika/Desktop/bot-example-our/rasa_models/current/nlu'
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 179 (14 distinct intents)
+	- Found intents: 'try again', 'account type', 'selection', 'confirmation', 'correct detailas', 'not confirmation', 'incorrect details', 'monthly', 'open a new bank account', 'after completion', 'fixed account', 'savings account', 'number of months', 'don't try again'
+	- entity examples: 15 (4 distinct entities)
+	- found entities: 'acc_type', 'num_of_months', 'amount', 'num of months'
+
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component Tokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component Featurizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component IntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/lakshika/Desktop/bot-example-our/rasa_models/current/nlu'
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 179 (14 distinct intents)
+	- Found intents: 'account type', 'monthly', 'number of months', 'not confirmation', 'correct detailas', 'savings account', 'incorrect details', 'don't try again', 'after completion', 'selection', 'try again', 'fixed account', 'confirmation', 'open a new bank account'
+	- entity examples: 15 (4 distinct entities)
+	- found entities: 'acc_type', 'amount', 'num_of_months', 'num of months'
+
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component Tokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component Featurizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component IntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/lakshika/Desktop/bot-example-our/rasa_models/current/nlu'
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 179 (14 distinct intents)
+	- Found intents: 'confirmation', 'correct detailas', 'don't try again', 'account type', 'fixed account', 'incorrect details', 'savings account', 'try again', 'not confirmation', 'number of months', 'monthly', 'selection', 'after completion', 'open a new bank account'
+	- entity examples: 15 (4 distinct entities)
+	- found entities: 'acc_type', 'num_of_months', 'num of months', 'amount'
+
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component Tokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component Featurizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component IntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/lakshika/Desktop/bot-example-our/rasa_models/current/nlu'
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 179 (14 distinct intents)
+	- Found intents: 'open a new bank account', 'monthly', 'savings account', 'confirmation', 'after completion', 'incorrect details', 'fixed account', 'selection', 'correct detailas', 'try again', 'account type', 'don't try again', 'number of months', 'not confirmation'
+	- entity examples: 15 (4 distinct entities)
+	- found entities: 'amount', 'num_of_months', 'num of months', 'acc_type'
+
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 179 (14 distinct intents)
+	- Found intents: 'monthly', 'account type', 'incorrect details', 'selection', 'savings account', 'open a new bank account', 'don't try again', 'confirmation', 'fixed account', 'number of months', 'after completion', 'try again', 'not confirmation', 'correct detailas'
+	- entity examples: 15 (4 distinct entities)
+	- found entities: 'num of months', 'amount', 'num_of_months', 'acc_type'
+
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component Tokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component Featurizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component IntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component Mapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/lakshika/Desktop/bot-example-our/rasa_models/current/nlu'
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 179 (14 distinct intents)
+	- Found intents: 'selection', 'number of months', 'try again', 'don't try again', 'incorrect details', 'savings account', 'account type', 'monthly', 'correct detailas', 'open a new bank account', 'after completion', 'not confirmation', 'confirmation', 'fixed account'
+	- entity examples: 15 (4 distinct entities)
+	- found entities: 'num_of_months', 'num of months', 'amount', 'acc_type'
+
+WARNING:rasa_nlu.registry:DEPRECATION warning: your nlu config file contains old style component name `tokenizer_whitespace`, you should change it to its class name: `WhitespaceTokenizer`.
+WARNING:rasa_nlu.registry:DEPRECATION warning: your nlu config file contains old style component name `tokenizer_whitespace`, you should change it to its class name: `WhitespaceTokenizer`.
+WARNING:rasa_nlu.registry:DEPRECATION warning: your nlu config file contains old style component name `tokenizer_whitespace`, you should change it to its class name: `WhitespaceTokenizer`.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component Tokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component Featurizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component IntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component Mapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component WhitespaceTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/lakshika/Desktop/bot-example-our/rasa_models/current/nlu'

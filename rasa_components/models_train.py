@@ -34,4 +34,4 @@ def train_nlu(data_path, configs, model_path):
 
 if __name__ == '__main__':
     train_nlu('./data/nlu.md', 'nlu_config.yml', '../rasa_models')
-    train_core('domain.yml', '../rasa_models/dialogue', './data/stories.md', 'policy.yml')
+    # train_core('domain.yml', '../rasa_models/dialogue', './data/stories.md', 'policy.yml')

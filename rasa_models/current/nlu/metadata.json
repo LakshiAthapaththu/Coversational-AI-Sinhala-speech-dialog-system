@@ -2,6 +2,22 @@
     "language": "en",
     "pipeline": [
         {
+            "name": "Tokenizer",
+            "class": "CustomTokenizer.Tokenizer"
+        },
+        {
+            "name": "Featurizer",
+            "class": "CustomFeaturizer.Featurizer"
+        },
+        {
+            "name": "IntentClassifier",
+            "class": "CustomIntentClassifier.IntentClassifier"
+        },
+        {
+            "name": "Mapper",
+            "class": "Mapper.Mapper"
+        },
+        {
             "name": "WhitespaceTokenizer",
             "class": "rasa_nlu.tokenizers.whitespace_tokenizer.WhitespaceTokenizer"
         },
@@ -36,15 +52,11 @@
             "L1_c": 0.1,
             "L2_c": 0.1,
             "name": "CRFEntityExtractor",
-            "file": "component_1_CRFEntityExtractor.pkl",
+            "file": "component_5_CRFEntityExtractor.pkl",
             "class": "rasa_nlu.extractors.crf_entity_extractor.CRFEntityExtractor"
-        },
-        {
-            "name": "new_component",
-            "class": "NewComponent.new_component"
         }
     ],
     "training_data": "training_data.json",
-    "trained_at": "20190929-130709",
+    "trained_at": "20190930-221228",
     "rasa_nlu_version": "0.15.1"
 }
