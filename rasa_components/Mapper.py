@@ -3,13 +3,10 @@ from rasa.nlu import utils
 from rasa.nlu.model import Metadata
 
 import nltk
-# from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import os
 import sys
 
 class Mapper(Component):
-    """A pre-trained sentiment component"""
-
     name = "Mapper"
     provides = ["intent"]
     requires = ["intent_number","confident"]
@@ -20,7 +17,6 @@ class Mapper(Component):
         super(Mapper, self).__init__(component_config)
 
     def train(self, training_data, cfg, **kwargs):
-        """Not needed, because the the model is pretrained"""
         pass
 
     def map(self, intent):
@@ -45,20 +41,16 @@ class Mapper(Component):
 
     def setIntent(self,intent, confident):
         final_intent = {
-            "intent": intent,
-            "confident": confident
+            "name": intent,
+            "confidence": confident
         }
         return final_intent
 
     def process(self, message, **kwargs):
-        """Retrieve the text message, pass it to the classifier
-            and append the prediction results to the message class."""
         intent_num = message.get("intent_number")
         conf = message.get("confident")
         message.set("intent", self.setIntent(self.map(intent_num), conf), add_to_output=True)
 
 
     def persist(path, project_name, fixed_model_name):
-        """Pass because a pre-trained model is already persisted"""
-
         pass

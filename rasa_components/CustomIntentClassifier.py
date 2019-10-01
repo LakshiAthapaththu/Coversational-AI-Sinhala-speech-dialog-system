@@ -7,7 +7,6 @@ import os
 import sys
 
 class IntentClassifier(Component):
-    """A pre-trained sentiment component"""
 
     name = "IntentClassifier"
     provides = ["intent_number","confident"]
@@ -19,7 +18,6 @@ class IntentClassifier(Component):
         super(IntentClassifier, self).__init__(component_config)
 
     def train(self, training_data, cfg, **kwargs):
-        """Not needed, because the the model is pretrained"""
         pass
 
     def loadmodels(self):
@@ -61,21 +59,9 @@ class IntentClassifier(Component):
 
         if (min(conf) < 0.5):
             returned_conf = min(conf)
-
-        # most_voted = max(set(l), key = l.count)
-        # return most_voted
         return most_voted, returned_conf
 
-    # def setIntent(self,intent,confident):
-    #     final_intent = {
-    #         "intent" : intent,
-    #         "confident" : confident
-    #     }
-    #     return final_intent
-
     def process(self, message, **kwargs):
-        """Retrieve the text message, pass it to the classifier
-            and append the prediction results to the message class."""
 
         loaded_model_SVM, loaded_model_NB, loaded_model_LR, word_array_read = self.loadmodels()
 
@@ -89,9 +75,5 @@ class IntentClassifier(Component):
         message.set("feature_vector_tfidf", "", add_to_output=True)
 
 
-
-
     def persist(path, project_name, fixed_model_name):
-        """Pass because a pre-trained model is already persisted"""
-
         pass

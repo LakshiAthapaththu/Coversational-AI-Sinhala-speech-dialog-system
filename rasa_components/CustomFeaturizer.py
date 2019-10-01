@@ -6,13 +6,10 @@ from sklearn.feature_extraction.text import TfidfTransformer
 import pickle
 
 import nltk
-# from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import os
 import sys
 
 class Featurizer(Component):
-    """A pre-trained sentiment component"""
-
     name = "Featurizer"
     provides = ["feature_vector","feature_vector_tfidf"]
     requires = ["tokens"]
@@ -23,7 +20,6 @@ class Featurizer(Component):
         super(Featurizer, self).__init__(component_config)
 
     def train(self, training_data, cfg, **kwargs):
-        """Not needed, because the the model is pretrained"""
         pass
 
     def loadmodels(self):
@@ -53,14 +49,10 @@ class Featurizer(Component):
 
 
     def process(self, message, **kwargs):
-        """Retrieve the text message, pass it to the classifier
-            and append the prediction results to the message class."""
-        # print (self.getFeaturizedSentence((message.get("tokens"))))
         sentence_bag, sentence_tfidf = self.getFeaturizedSentence(message.get("tokens"))
         message.set("feature_vector", sentence_bag, add_to_output=True)
         message.set("feature_vector_tfidf", sentence_tfidf, add_to_output=True)
 
     def persist(path, project_name, fixed_model_name):
-        """Pass because a pre-trained model is already persisted"""
 
         pass
